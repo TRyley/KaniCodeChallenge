@@ -1,0 +1,9 @@
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.highlight-text {
+  color: #9701c4;
+}

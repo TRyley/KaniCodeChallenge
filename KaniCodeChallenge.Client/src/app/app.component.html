@@ -1,0 +1,13 @@
+<div class="nav-options-list">
+  <ul>
+    <li><a routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page">Home</a></li>
+    <li><a routerLink="/upload" routerLinkActive="active" ariaCurrentWhenActive="page">Upload</a></li>
+    <li><a routerLink="/recent" routerLinkActive="active" ariaCurrentWhenActive="page">Recent</a></li>
+    <li><a routerLink="/leaderboard" routerLinkActive="active" ariaCurrentWhenActive="page">Leaderboard</a></li>
+  </ul>
+
+</div>
+<!-- The routed views render in the <router-outlet>-->
+<div id="displayed-component" class="content">
+  <router-outlet></router-outlet>
+</div>

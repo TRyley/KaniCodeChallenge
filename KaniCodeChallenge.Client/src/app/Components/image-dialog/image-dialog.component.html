@@ -1,0 +1,30 @@
+<div class="fixActionRow">
+    <h2 mat-dialog-title>{{data.postName}}</h2>
+    <div mat-dialog-content class="mat-typography">
+      <div class="dialog-container">
+        <div class="image-container">
+          <app-image [post]="data" [clickable]="false"></app-image>
+        </div>
+        <div class="comment-container">
+          <div class="comment-list">
+            <div *ngFor="let comment of data.comments">
+              <div class="comment-instance">
+                <p class="small-font">User: {{comment.userId}}</p>
+                <p>{{comment.commentText}}</p>
+              </div>
+            </div>
+          </div>
+          <div class="add-comment">
+            <textarea class="comment-box" [(ngModel)]="commentText"></textarea>
+            <button class="add button" (click)="addComment()">Comment</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <div class="spacer"></div>
+
+  <div mat-dialog-actions>
+    <button class="button" (click)="closeDialog()">Close</button>
+  </div>
+</div>

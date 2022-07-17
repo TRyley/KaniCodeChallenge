@@ -1,0 +1,63 @@
+.main-container {
+    margin: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container {
+    cursor: pointer;
+}
+
+.vote-container {
+    display: flex;
+    width: 100%;
+    height: 1em;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.5em;
+}
+
+.vote {
+  text-align: center;
+  justify-content: center;
+  width: 2em;
+  height: 2em;
+  border-radius: 1em;
+  cursor: pointer;
+  font: inherit;
+  font-weight: bold;
+  outline: inherit;
+}
+
+.rating {
+    width: 3em;
+    text-align: center;
+}
+
+.up {
+  background-color: transparent;
+  color: #05ffea;
+  border: 0.2em solid #05ffea;
+  transition: background-color ease 0.25s;
+  transition: color ease 0.25s;
+}
+
+.down {
+  background-color: transparent;
+  color: #9701c4;
+  border: 0.2em solid #9701c4;
+  transition: background-color ease 0.25s;
+  transition: color ease 0.25s;
+}
+
+.down:hover {
+  background: #9701c4;
+  color: #fff;
+}
+
+.up:hover {
+  background: #05ffea;
+  color: #fff;
+}

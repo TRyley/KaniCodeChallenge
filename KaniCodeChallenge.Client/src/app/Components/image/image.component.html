@@ -1,0 +1,9 @@
+<div class="main-container">
+  <p id="post-name" *ngIf="clickable">{{post.postName}}</p>
+    <img class="image-lg" [src]="sourceURL" [ngClass]="{'image-container': clickable}" (click)="openDialog()">
+  <div class="vote-container">
+    <button *ngIf="votable" id="downvote" class="vote down" (click)="downvote()">-</button>
+    <span id="rating" class="rating">{{postRating}}</span>
+    <button *ngIf="votable" id="upvote" class="vote up" (click)="upvote()">+</button>
+  </div>
+</div>

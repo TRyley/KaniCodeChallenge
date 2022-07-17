@@ -1,0 +1,6 @@
+<div class="leaderboard-container">
+  <h1>Leaderboard</h1>
+  <div *ngFor="let post of posts">
+    <app-image [post]="post" [clickable]="true" [votable]="false" (onChange)="getPosts()"></app-image>
+  </div>
+</div>

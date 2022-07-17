@@ -1,0 +1,19 @@
+<div class="page-container">
+  <div>
+    <h1>Upload a new image</h1>
+  </div>
+
+  <div>
+    <div class="image-container">
+      <img class="image-lg" src="{{imageURL}}" />
+    </div>
+    <div class="form">
+      <label class="custom-file-upload">
+        <input id="file-input" type="file" accept="image/jpeg" (change)="handleImageChange($event)" />
+        Choose Image
+      </label>
+      <textarea id="comment-input" class="comment-box" rows="4" placeholder="Add a comment (Optional)" [(ngModel)]="comment"></textarea>
+      <button class="button" [disabled]="disableButton" (click)="handleSubmit()">Post</button>
+    </div>
+  </div>
+</div>

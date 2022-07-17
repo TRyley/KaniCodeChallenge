@@ -1,0 +1,6 @@
+<div class="recent-container">
+  <h1>The top 10 most recent posts</h1>
+  <div *ngFor="let post of posts">
+    <app-image [post]="post" [clickable]="true" (onChange)="getPosts()"></app-image>
+  </div>
+</div>
